@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Nicha Rojsrikul 5931259621-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.nicharojsrikul.starwars.MainActivity">
+
+    <com.example.nicharojsrikul.starwars.DrawClass
+        android:id="@+id/viewDraw"
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_weight="10" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="0">
+        <Button
+            android:id="@+id/btnPause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="pause"
+            android:layout_margin="8dp"
+            android:onClick="pause"/>
+        <Button
+            android:id="@+id/btnFast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="fast"
+            android:layout_margin="8dp"
+            android:onClick="speed"/>
+        <Button
+            android:id="@+id/btnSlow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="slow"
+            android:layout_margin="8dp"
+            android:onClick="slow"/>
+        <Button
+            android:id="@+id/btnReset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="reset"
+            android:layout_margin="8dp"
+            android:onClick="reset"/>
+    </LinearLayout>
+</LinearLayout>
